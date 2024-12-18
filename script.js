@@ -673,7 +673,7 @@ document.addEventListener("keydown", (e) => {
       moveRight();
       break;
 
-    case "Space":
+    case " ":
       gravityFlip();
       break;
 
