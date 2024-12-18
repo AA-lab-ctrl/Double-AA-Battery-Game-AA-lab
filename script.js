@@ -640,6 +640,14 @@ document.addEventListener("keydown", (e) => {
       }, 1000 / 60);
     }
   }
+  function gravityFlip(){
+    if (gravityMulti > 0){
+      gravityMulti = -0.0065;
+    }
+    if (gravityMulti < 0){
+      gravityMulti = 0.0065;
+    }  
+  }
   switch (e.key) {
     case "ArrowUp":
       jump();
@@ -665,11 +673,15 @@ document.addEventListener("keydown", (e) => {
       moveRight();
       break;
 
+    case "Space":
+      gravityFlip();
+      break;
+
     case "Enter":
       if (score > 0) score--;
       if (canGenMap) {
         const audio = new Audio("./Tuco-GET-OUT-Sound-Effect.wav");
-        audio.volume = 0.2; // Set volume to 50%
+        audio.volume = 100; // Set volume to 50%
         audio.play();
         getMapSize();
         canGenMap = false;
