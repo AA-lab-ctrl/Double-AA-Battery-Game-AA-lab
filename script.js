@@ -668,7 +668,7 @@ document.addEventListener("keydown", (e) => {
     case "Enter":
       if (score > 0) score--;
       if (canGenMap) {
-        const audio = new Audio("./loss.wav");
+        const audio = new Audio("./Tuco-GET-OUT-Sound-Effect.wav");
         audio.volume = 0.2; // Set volume to 50%
         audio.play();
         getMapSize();
