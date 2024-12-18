@@ -672,7 +672,7 @@ document.addEventListener("keydown", (e) => {
       break;
 
     case " ":
-      gravityFlip();
+      gravityMulti = -1;
       break;
       
     case "x":
