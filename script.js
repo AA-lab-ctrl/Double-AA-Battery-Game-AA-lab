@@ -361,7 +361,7 @@ function endFunction(lose) {
     () => {
       if (lose ? score > prevScore - 2 : score > 0) {
         score--;
-        const loseAudio = new Audio("./loss.wav");
+        const loseAudio = new Audio("./Tuco-GET-OUT-Sound-Effect.wav");
         loseAudio.volume = 0.2; // Set volume to 50%
         loseAudio.play();
         getMapSize();
