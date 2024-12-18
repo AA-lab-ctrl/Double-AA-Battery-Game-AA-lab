@@ -642,6 +642,9 @@ document.addEventListener("keydown", (e) => {
   }
   function gravityFlip(){
       gravityMulti = -0.0065;
+      if (gravityMulti < 0){
+        gravityMulti = 0.0065;
+      }
   }
   switch (e.key) {
     case "ArrowUp":
