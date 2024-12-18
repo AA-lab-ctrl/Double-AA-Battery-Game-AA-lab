@@ -121,7 +121,7 @@ class Player {
       this.yPos = canvas.height - this.h - canvas.height / map.length;
       this.ySpeed = 0;
     }
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
     ctx.fillRect(this.xPos, this.yPos, this.w, this.h);
   }
 
