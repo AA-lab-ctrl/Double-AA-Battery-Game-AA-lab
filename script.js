@@ -233,7 +233,7 @@ function ranNum(row, height) {
 //* Function to get the size of the map based on the score
 function getMapSize() {
   if (score >= 0 && score < 5) {
-    const newSize = Math.floor(Math.random() * 100 + 100);
+    const newSize = Math.floor(Math.random() * 5 + 5);
     map = ranMap(newSize, newSize);
   } else if (score >= 5 && score < 10) {
     const newSize = Math.floor(Math.random() * 4 + 8);
